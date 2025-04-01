@@ -7,10 +7,6 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\images\\bg2.png||{58961B49-13E0-48C0-9258-13CBC4D40279}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:images\\bg2.png||{58961B49-13E0-48C0-9258-13CBC4D40279}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\sass\\libs\\_html-grid.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\sass\\libs\\_html-grid.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}"
     }
@@ -22,20 +18,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "bg2.png",
-              "DocumentMoniker": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\images\\bg2.png",
-              "RelativeDocumentMoniker": "images\\bg2.png",
-              "ToolTip": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\images\\bg2.png",
-              "RelativeToolTip": "images\\bg2.png",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
-              "WhenOpened": "2025-04-01T19:39:42.514Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -44,14 +28,14 @@
               "RelativeDocumentMoniker": "index.html",
               "ToolTip": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\index.html",
               "RelativeToolTip": "index.html",
-              "ViewState": "AgIAAIIAAAAAAAAAAADwv9oAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAADwvzYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-04-01T17:29:01.899Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "_html-grid.scss",
               "DocumentMoniker": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\sass\\libs\\_html-grid.scss",
               "RelativeDocumentMoniker": "assets\\sass\\libs\\_html-grid.scss",
