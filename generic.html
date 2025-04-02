@@ -5,139 +5,154 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Generic Page - Massively by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<head>
+	<title>Generic Page - Massively by HTML5 UP</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<style>
+		.responsive-image {
+			width: 100%;
+			height: auto;
+			max-width: 300px; /* Adjust this value as needed */
+			margin: 2em;
+		}
 
-		<div id="wrapper" class="fade-in">
+		.image-container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+		}
+	</style>
+</head>
+<body class="is-preload">
 
-			<!-- Header -->
-			<div id="intro">
-                <h1>
-                    Mes projets personels
-                </h1>
-				<ul class="actions">
-					<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-				</ul>
-			</div>
+	<div id="wrapper" class="fade-in">
 
-			<nav id="nav">
-				<ul class="links">
-					<li><a href="index.html">Qui je suis</a></li>
-					<li class="active"><a href="generic.html">Mes projets personels</a></li>
-				</ul>
-				<ul class="icons">
-					<li><a href="https://www.facebook.com/julienbeaumont.qc/about" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-					<li><a href="https://github.com/TOUQUI" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-				</ul>
-			</nav>
+		<!-- Header -->
+		<div id="intro">
+			<h1>
+				Mes projets personels
+			</h1>
+			<ul class="actions">
+				<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+			</ul>
+		</div>
 
-			<div id="main">
+		<nav id="nav">
+			<ul class="links">
+				<li><a href="index.html">Qui je suis</a></li>
+				<li class="active"><a href="generic.html">Mes projets personels</a></li>
+			</ul>
+			<ul class="icons">
+				<li><a href="https://www.facebook.com/julienbeaumont.qc/about" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+				<li><a href="https://github.com/TOUQUI" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+			</ul>
+		</nav>
 
-				<p>
-					<div>
-						<h1>THIS IS A GAME</h1>
-						<div style="display: flex; justify-content: center; align-items: center;">
-							<img src="images/thisIsAGame1.jpg" alt="thisIsAGameImage1" style="width: 20vw; height: 13vw; margin: 2em;" />
-							<img src="images/thisIsAGame2.jpg" alt="thisIsAGameImage2" style="width: 20vw; height: 13vw; margin: 2em;" />
-							<img src="images/thisIsAGame3.jpg" alt="thisIsAGameImage3" style="width: 20vw; height: 13vw; margin: 2em;" />
-						</div>
-						<p>This is a game est un jeu que j'ai programmé lors de ma première session de Cégep en programmation. Ce jeu n'est honnêtement pas super bien fait, mais je ne savais même pas ce qu'était JSON à ce moment-là et j'ai dû l'apprendre pour stocker les informations sur l'inventaire du joueur, par exemple son argent et les skins débloqués. Ce jeu m'a permis d'apprendre non seulement JSON en autodidacte, mais il m'a aussi permis de prendre un peu d'avance vis-à-vis des autres élèves, car j'ai passé un peu plus de 100 heures à apprendre toutes sortes de choses vraiment utiles pour la suite de ma technique.</p>
-						<h2><a style="border-bottom: 3px solid black" href="https://store.steampowered.com/app/1951750/This_is_a_game/">Jouer à This is a game</a></h2>
+		<div id="main">
+
+			<p>
+				<div>
+					<h1>THIS IS A GAME</h1>
+					<div class="image-container">
+						<img src="images/thisIsAGame1.jpg" alt="thisIsAGameImage1" class="responsive-image" />
+						<img src="images/thisIsAGame2.jpg" alt="thisIsAGameImage2" class="responsive-image" />
+						<img src="images/thisIsAGame3.jpg" alt="thisIsAGameImage3" class="responsive-image" />
 					</div>
-					<div>
-						<h1>El-drifto</h1>
-						<div style="display: flex; justify-content: center; align-items: center;">
-							<img src="images/elDrifto1.jpg" alt="thisIsAGameImage1" style="width: 22vw; height: 13vw; margin: 2em;" />
-							<img src="images/elDrifto2.jpg" alt="thisIsAGameImage2" style="width: 22vw; height: 13vw; margin: 2em;" />
-							<img src="images/elDrifto3.jpg" alt="thisIsAGameImage3" style="width: 20vw; height: 13vw; margin: 2em;" />
-						</div>
-						<p>
-							El-Drifto est un jeu vraiment plus poussé que This is a game. J'ai commencé ce projet au tout début de l'année 2024, durant les vacances de Noël. Je venais de programmer un jeu de type RPG pour un cours de projet en programmation, et l'un des autres élèves avait fait un jeu en 3D. Voir un autre élève réussir à faire un jeu en 3D alors qu'il n'avait jamais programmé de jeu auparavant a piqué mon orgueil. Je me suis dit : s'il est possible de faire un jeu 3D en ne connaissant que la programmation, moi qui ai déjà fait plusieurs jeux 2D, je devrais pouvoir le faire. J'avais passé littéralement un ou deux milliers d'heures à m'amuser avec le moteur de jeu Godot.
-							Alors, j'ai ouvert Internet, je suis allé acheter des modèles 3D de voitures spécialement conçus pour être intégrés dans des jeux de voitures, puis j'ai ouvert Godot. J'ai essayé et réessayé de faire fonctionner mon jeu. J'étais seul dans ma chambre avec une connexion Internet et deux ordinateurs. J'ai regardé des tutoriels hyper niches et spécifiques avec 50 vues, j'ai discuté avec des génies de l'informatique sur des serveurs Discord très niches, et j'ai fouillé et travaillé sans relâche.
-
-							Pour dire à quel point j'ai travaillé dur et à quel point j'ai exploré et essayé de comprendre le fonctionnement de l'API de Steam : j'ai trouvé des bugs qui corrompaient certains bits d'une requête entre deux joueurs. J'ai échoué deux fois avant de réussir à utiliser l'API de Steam. J'ai commencé par faire fonctionner mon jeu sur les serveurs d'AWS, mais j'ai dû tout supprimer, car je me suis vite rendu compte qu'Amazon Web Services facture beaucoup trop cher pour leurs services. Ensuite, j'ai transformé mon ancien ordinateur de jeu en serveur Linux avec une clé USB et un peu d'huile de coude.
-
-							J'ai ensuite réalisé que cela ne fonctionnerait pas : avoir un ordinateur gros comme un réfrigérateur qui tourne 24 heures sur 24 dans ma chambre n'était pas la meilleure idée. À ce stade, j'avais déjà passé au minimum 160 heures à programmer deux types d'architectures multijoueurs. J'ai découvert que Steam offrait une API gratuite et illimitée lorsqu'on achète une licence pour mettre un jeu en ligne sur leur plateforme, et j'avais justement une licence qui traînait. J'ai donc recréé une troisième fois toutes les fonctionnalités multijoueurs, cette fois-ci avec l'API de Steam.
-
-							Aujourd'hui, le jeu est presque terminé. J'attends avec impatience que l'été arrive pour enfin pouvoir le terminer.
-						</p>
-						<h2><a style="border-bottom: 3px solid black" href="https://store.steampowered.com/app/2445170/ELDRIFTO/">Voir la page Steam d'El-drifto</a></h2>
+					<p>This is a game est un jeu que j'ai programmé lors de ma première session de Cégep en programmation. Ce jeu n'est honnêtement pas super bien fait, mais je ne savais même pas ce qu'était JSON à ce moment-là et j'ai dû l'apprendre pour stocker les informations sur l'inventaire du joueur, par exemple son argent et les skins débloqués. Ce jeu m'a permis d'apprendre non seulement JSON en autodidacte, mais il m'a aussi permis de prendre un peu d'avance vis-à-vis des autres élèves, car j'ai passé un peu plus de 100 heures à apprendre toutes sortes de choses vraiment utiles pour la suite de ma technique.</p>
+					<h2><a style="border-bottom: 3px solid black" href="https://store.steampowered.com/app/1951750/This_is_a_game/">Jouer à This is a game</a></h2>
+				</div>
+				<div>
+					<h1>El-drifto</h1>
+					<div class="image-container">
+						<img src="images/elDrifto1.jpg" alt="thisIsAGameImage1" class="responsive-image" />
+						<img src="images/elDrifto2.jpg" alt="thisIsAGameImage2" class="responsive-image" />
+						<img src="images/elDrifto3.jpg" alt="thisIsAGameImage3" class="responsive-image" />
 					</div>
-					<div>
-						<h1>Space mission</h1>
-						<p>
-							Space Mission est un jeu que j'ai abandonné, car j'ai essayé de faire tous les dessins par moi-même, mais je me suis rendu compte assez vite que c'était vraiment beaucoup trop long et que je n'avais aucun talent en dessin. Un ami m'a aidé à faire beaucoup de dessins, mais cet ami a abandonné le projet, donc j'ai fait de même. Ce jeu était un genre de Terraria très peu avancé. Malgré tout, je suis fier d'un gros script que j'ai fait pour ce jeu. Je parle ici d'un système d'inventaire à la Minecraft. Donc, beaucoup de cases avec la possibilité de cliquer sur une case pour déplacer les items avec la souris.
+					<p>
+						El-Drifto est un jeu vraiment plus poussé que This is a game. J'ai commencé ce projet au tout début de l'année 2024, durant les vacances de Noël. Je venais de programmer un jeu de type RPG pour un cours de projet en programmation, et l'un des autres élèves avait fait un jeu en 3D. Voir un autre élève réussir à faire un jeu en 3D alors qu'il n'avait jamais programmé de jeu auparavant a piqué mon orgueil. Je me suis dit : s'il est possible de faire un jeu 3D en ne connaissant que la programmation, moi qui ai déjà fait plusieurs jeux 2D, je devrais pouvoir le faire. J'avais passé littéralement un ou deux milliers d'heures à m'amuser avec le moteur de jeu Godot.
+						Alors, j'ai ouvert Internet, je suis allé acheter des modèles 3D de voitures spécialement conçus pour être intégrés dans des jeux de voitures, puis j'ai ouvert Godot. J'ai essayé et réessayé de faire fonctionner mon jeu. J'étais seul dans ma chambre avec une connexion Internet et deux ordinateurs. J'ai regardé des tutoriels hyper niches et spécifiques avec 50 vues, j'ai discuté avec des génies de l'informatique sur des serveurs Discord très niches, et j'ai fouillé et travaillé sans relâche.
 
-							Ce script, je l'ai fait tout seul, à l'exception de la commande pour déplacer l'item de l'inventaire à la souris et que l'item suive la souris en temps réel. Ce script n'est vraiment pas optimisé et a été programmé par mes soins à l'été 2023. Je suis fier de la complexité qu'offre ce script. Un inventaire de ce type possède énormément de combinaisons de possibilités et j'ai dû réfléchir longtemps pour trouver une solution à chaque cas possible de l'utilisateur afin d'éviter des glitches de duplication ou que des items disparaissent.
+						Pour dire à quel point j'ai travaillé dur et à quel point j'ai exploré et essayé de comprendre le fonctionnement de l'API de Steam : j'ai trouvé des bugs qui corrompaient certains bits d'une requête entre deux joueurs. J'ai échoué deux fois avant de réussir à utiliser l'API de Steam. J'ai commencé par faire fonctionner mon jeu sur les serveurs d'AWS, mais j'ai dû tout supprimer, car je me suis vite rendu compte qu'Amazon Web Services facture beaucoup trop cher pour leurs services. Ensuite, j'ai transformé mon ancien ordinateur de jeu en serveur Linux avec une clé USB et un peu d'huile de coude.
 
-							Bref, je vous offre le script dans un format .txt si vous voulez essayer de comprendre le type de complexité que j'aime bien programmer. J'ai programmé ce script 100 % à la main et il fait plus de 600 lignes. Encore une fois, je rappelle qu'il n'est pas optimisé, mais il est fonctionnel dans mon cas d'utilisation.
-						</p>
-						<h2><a href="scripts/inventoryGD.txt" download class="download-btn">Télécharger le script Godot en fichier .txt</a></h2>
-					</div>
-					<div>
-						<h1>TI-RPG</h1>
-						<p>
-							TI-RPG est un jeu de type RPG que j'ai programmé en équipe pour un cours de projet informatique. En réalité, j'ai dû faire 99 % du code et mon coéquipier a fait les recherches pour trouver des voice-actors et des assets pour le jeu. J'ai proposé de lui montrer comment Godot fonctionnait, mais il n'avait finalement pas si envie, donc nous avons pris la décision que je coderais le jeu seul en une session, soit un peu moins de 15 semaines.
+						J'ai ensuite réalisé que cela ne fonctionnerait pas : avoir un ordinateur gros comme un réfrigérateur qui tourne 24 heures sur 24 dans ma chambre n'était pas la meilleure idée. À ce stade, j'avais déjà passé au minimum 160 heures à programmer deux types d'architectures multijoueurs. J'ai découvert que Steam offrait une API gratuite et illimitée lorsqu'on achète une licence pour mettre un jeu en ligne sur leur plateforme, et j'avais justement une licence qui traînait. J'ai donc recréé une troisième fois toutes les fonctionnalités multijoueurs, cette fois-ci avec l'API de Steam.
 
-							Ce jeu n'a rien d'exceptionnel sur le plan programmation, il reste en somme plutôt simple, mais il a fait quand même beaucoup de bruit au département d'informatique de Garneau. Ce jeu était de loin le projet le plus ambitieux et, en plus, nous avons donné à chaque BOSS le nom d'un ou d'une professeur du département d'informatique.
+						Aujourd'hui, le jeu est presque terminé. J'attends avec impatience que l'été arrive pour enfin pouvoir le terminer.
+					</p>
+					<h2><a style="border-bottom: 3px solid black" href="https://store.steampowered.com/app/2445170/ELDRIFTO/">Voir la page Steam d'El-drifto</a></h2>
+				</div>
+				<div>
+					<h1>Space mission</h1>
+					<p>
+						Space Mission est un jeu que j'ai abandonné, car j'ai essayé de faire tous les dessins par moi-même, mais je me suis rendu compte assez vite que c'était vraiment beaucoup trop long et que je n'avais aucun talent en dessin. Un ami m'a aidé à faire beaucoup de dessins, mais cet ami a abandonné le projet, donc j'ai fait de même. Ce jeu était un genre de Terraria très peu avancé. Malgré tout, je suis fier d'un gros script que j'ai fait pour ce jeu. Je parle ici d'un système d'inventaire à la Minecraft. Donc, beaucoup de cases avec la possibilité de cliquer sur une case pour déplacer les items avec la souris.
 
-							Je vous laisse la possibilité d'aller voir le repo GitHub du projet pour voir le code source si vous en avez la patience, et je vous donne aussi le fichier .exe pour essayer le jeu. Prenez en compte que je n'ai pas pris le temps de faire en sorte que le jeu soit compatible avec toutes les tailles d'écran. Ce qui est un peu stupide, car c'est vraiment simple, mais je ne savais pas comment faire à l'époque et je n'avais pas le temps de le faire, puisque je rappelle que j'ai programmé ce jeu seul en moins de 15 semaines, donc j'ai priorisé le fait que le jeu soit fonctionnel et sans bug apparent.
-						</p>
-						<h2><a href="https://itch.io/game/edit/3442025">Téléchargez le jeu au format .exe sur Itch.io gratuitement</a></h2>
-					</div>
-				</p>
+						Ce script, je l'ai fait tout seul, à l'exception de la commande pour déplacer l'item de l'inventaire à la souris et que l'item suive la souris en temps réel. Ce script n'est vraiment pas optimisé et a été programmé par mes soins à l'été 2023. Je suis fier de la complexité qu'offre ce script. Un inventaire de ce type possède énormément de combinaisons de possibilités et j'ai dû réfléchir longtemps pour trouver une solution à chaque cas possible de l'utilisateur afin d'éviter des glitches de duplication ou que des items disparaissent.
 
-			</div>
+						Bref, je vous offre le script dans un format .txt si vous voulez essayer de comprendre le type de complexité que j'aime bien programmer. J'ai programmé ce script 100 % à la main et il fait plus de 600 lignes. Encore une fois, je rappelle qu'il n'est pas optimisé, mais il est fonctionnel dans mon cas d'utilisation.
+					</p>
+					<h2><a href="scripts/inventoryGD.txt" download class="download-btn">Télécharger le script Godot en fichier .txt</a></h2>
+				</div>
+				<div>
+					<h1>TI-RPG</h1>
+					<p>
+						TI-RPG est un jeu de type RPG que j'ai programmé en équipe pour un cours de projet informatique. En réalité, j'ai dû faire 99 % du code et mon coéquipier a fait les recherches pour trouver des voice-actors et des assets pour le jeu. J'ai proposé de lui montrer comment Godot fonctionnait, mais il n'avait finalement pas si envie, donc nous avons pris la décision que je coderais le jeu seul en une session, soit un peu moins de 15 semaines.
 
-			<footer id="footer">
-				<section class="split contact" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; align-items: center; text-align: center; margin-top: 2em;">
-					<div style="display: flex; justify-content: space-between; width: 100%; max-width: 900px;">
-						<div style="display: flex; flex-direction: column; align-items: center; text-align: center; flex: 1;">
-							<h3>Address</h3>
-							744 RTE Gravel
-							Neuville
-						</div>
-						<div style="display: flex; flex-direction: column; align-items: center; text-align: center; flex: 1;">
-							<h3>Numéro de téléphone</h3>
-							<a href="#">(418) 284-5654</a>
-						</div>
-						<div style="display: flex; flex-direction: column; align-items: center; text-align: center; flex: 1;">
-							<h3>Adresse courriel</h3>
-							<a href="#">julienbeaumont@hotmail.com</a>
-						</div>
-					</div>
-					<div style="display: flex; flex-direction: column; align-items: center; text-align: center; width: 100%; max-width: 900px;">
-						<h3>Social</h3>
-						<ul class="icons alt" style="display: flex; justify-content: center; align-items:center;">
-							<li style="margin-right: 10px;"><a href="https://www.facebook.com/julienbeaumont.qc/about" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li style="margin-right: 10px;"><a href="https://github.com/TOUQUI" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</div>
-				</section>
+						Ce jeu n'a rien d'exceptionnel sur le plan programmation, il reste en somme plutôt simple, mais il a fait quand même beaucoup de bruit au département d'informatique de Garneau. Ce jeu était de loin le projet le plus ambitieux et, en plus, nous avons donné à chaque BOSS le nom d'un ou d'une professeur du département d'informatique.
 
-
-
-			</footer>
-
-			<div id="copyright">
-				<ul><li>&copy; TOUQUI</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-			</div>
+						Je vous laisse la possibilité d'aller voir le repo GitHub du projet pour voir le code source si vous en avez la patience, et je vous donne aussi le fichier .exe pour essayer le jeu. Prenez en compte que je n'ai pas pris le temps de faire en sorte que le jeu soit compatible avec toutes les tailles d'écran. Ce qui est un peu stupide, car c'est vraiment simple, mais je ne savais pas comment faire à l'époque et je n'avais pas le temps de le faire, puisque je rappelle que j'ai programmé ce jeu seul en moins de 15 semaines, donc j'ai priorisé le fait que le jeu soit fonctionnel et sans bug apparent.
+					</p>
+					<h2><a href="https://itch.io/game/edit/3442025">Téléchargez le jeu au format .exe sur Itch.io gratuitement</a></h2>
+				</div>
+			</p>
 
 		</div>
 
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.scrollex.min.js"></script>
-		<script src="assets/js/jquery.scrolly.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
+		<footer id="footer">
+			<section class="split contact" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; align-items: center; text-align: center; margin-top: 2em;">
+				<div style="display: flex; justify-content: space-between; width: 100%; max-width: 900px;">
+					<div style="display: flex; flex-direction: column; align-items: center; text-align: center; flex: 1;">
+						<h3>Address</h3>
+						744 RTE Gravel
+						Neuville
+					</div>
+					<div style="display: flex; flex-direction: column; align-items: center; text-align: center; flex: 1;">
+						<h3>Numéro de téléphone</h3>
+						<a href="#">(418) 284-5654</a>
+					</div>
+					<div style="display: flex; flex-direction: column; align-items: center; text-align: center; flex: 1;">
+						<h3>Adresse courriel</h3>
+						<a href="#">julienbeaumont@hotmail.com</a>
+					</div>
+				</div>
+				<div style="display: flex; flex-direction: column; align-items: center; text-align: center; width: 100%; max-width: 900px;">
+					<h3>Social</h3>
+					<ul class="icons alt" style="display: flex; justify-content: center; align-items:center;">
+						<li style="margin-right: 10px;"><a href="https://www.facebook.com/julienbeaumont.qc/about" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li style="margin-right: 10px;"><a href="https://github.com/TOUQUI" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+					</ul>
+				</div>
+			</section>
 
-	</body>
+
+
+		</footer>
+
+		<div id="copyright">
+			<ul><li>&copy; TOUQUI</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+		</div>
+
+	</div>
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
 </html>

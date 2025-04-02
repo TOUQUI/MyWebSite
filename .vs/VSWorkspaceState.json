@@ -3,7 +3,6 @@
     "",
     "\\.github",
     "\\assets",
-    "\\assets\\sass\\libs",
     "\\assets\\webfonts",
     "\\images"
   ],
