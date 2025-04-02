@@ -1,0 +1,692 @@
+extends Node2D
+
+signal demanderInfo()
+signal sendInfo(value:int, amount:int, item:int, childNode:int, slot:int)
+signal itemAdded()
+signal sendTempo2(value:int, amount:int, item:int, slot:int)
+signal askChildNode()
+signal sendChildNodeToDelete(childNode:int)
+signal respondInventory(full:bool)
+signal giveItem(item : int)
+signal sendInfoChest(value:int, amount:int, p:String, sourisChild:int)
+
+signal demanderInfoChest()
+signal demanderInfoFour()
+signal ItemAddedChest()
+signal ItemAddedFour()
+signal sendInfoFour(value:int, amount:int, p:String, sourisChild:int)
+signal sendIfVisible()
+signal closseFourUi()
+
+var smalChilddNode
+var nodes = []
+
+var item1 = preload("res://inventory/item1.tscn")
+var item2 = preload("res://inventory/item2.tscn")
+var item3 = preload("res://inventory/item3.tscn")
+var item4 = preload("res://inventory/item_4.tscn")
+var item5 = preload("res://inventory/item_5.tscn")
+var item6 = preload("res://inventory/item_6.tscn")
+var item7 = preload("res://inventory/item_7.tscn")
+var item8 = preload("res://inventory/item_8.tscn")
+var item9 = preload("res://inventory/item_9.tscn")
+
+var lesItems = [
+	{"item": item1},
+	{"item": item2},
+	{"item": item3},
+	{"item": item4},
+	{"item": item5},
+	{"item": item6},
+	{"item": item7},
+	{"item": item8},
+	{"item": item9}
+]
+
+var itemNode
+var parent
+var itemInComming = false
+var containerNode
+var childNodeToDelete
+var parentNode 
+var isVisible = false
+var itemInside = false
+var itemToAdd = null
+var i
+var nbSlot = 9
+var slotSelected = 1
+var itemSelected
+var left
+var node
+var childInPlayerUi = 0
+var nbItem
+var inventory_file = "user://Mission-Space-Inventory.dat"
+var fileOpen
+var fileRead
+var playerInventoryData
+var pause_menu_Node
+var playerData
+var parent1
+var parent2
+var itemsChild = []
+var childOfItemsChild = []
+var itemsContener
+var childName = ""
+
+var vectorData =[
+	{
+		"value": -1
+	},
+	{
+		"value": -1
+	}
+]
+
+var lesSlots = [
+	{
+		"value": 0,
+		"amount": 0,
+		"itemNode": 0
+	},
+	{
+		"value": 5,
+		"amount": 1,
+		"itemNode": 0
+	},
+	{
+		"value": 6,
+		"amount": 1,
+		"itemNode": 0
+	},
+	{
+		"value": 0,
+		"amount": 0,
+		"itemNode": 0
+	},
+	{
+		"value": 0,
+		"amount": 0,
+		"itemNode": 0
+	},
+	{
+		"value": 0,
+		"amount": 0,
+		"itemNode": 0
+	},
+	{
+		"value": 0,
+		"amount": 0,
+		"itemNode": 0
+	},
+	{
+		"value": 0,
+		"amount": 0,
+		"itemNode": 0
+	},
+	{
+		"value": 0,
+		"amount": 0,
+		"itemNode": 0
+	}
+]
+
+var slotTempo = [
+	{
+		"value": 0,
+		"amount": 0,
+		"provenance": 0
+	}
+]
+
+var slotTempo2 = [
+	{
+		"value": 0,
+		"amount": 0,
+		"provenance": 0
+	}
+] 
+
+func _ready():
+	$TextureRect.visible = false
+	$trash.visible = false
+	$Control.visible = false
+	containerNode = get_node("Control/GridContainer")
+	$pocket/selectedTwo.visible = false
+	getLevelAndMapName()
+	ConnectItems()
+	pause_menu_Node = get_node("/root/" + str(parent1) + "/CanvasLayer/pauseMenu")
+	pause_menu_Node.save.connect(Save_data)
+	Load_data() #lire et set les valeurs sauvegardé
+	loadInventaire()
+	selectTool(1)
+
+func ConnectItems():
+	itemsContener = get_node("/root/" + str(parent1) + "/" + str(parent2) + "/TileMap/items")
+	itemsChild = itemsContener.get_children()
+	for child in itemsChild:
+		
+		if child.name == "BigRockFer":
+			childOfItemsChild = child.get_children()
+			for child2 in childOfItemsChild:
+				childName = child2.name
+				child2.askItem.connect(GiveItem)
+				child2.bigRockDead.connect(rockFerDead)
+		
+		elif child.name == "BigRock":
+			childOfItemsChild = child.get_children()
+			for child2 in childOfItemsChild:
+				child2.askItem.connect(GiveItem)
+				child2.bigRockDead.connect(rockDead)
+		
+		elif child.name == "Bush" || child.name == "Rock" || child.name == "Tournesol":
+			connectAskAndInt(child)
+		
+		elif child.name == "Tree": 
+			childOfItemsChild = child.get_children()
+			for child2 in childOfItemsChild:
+				child2.askItem.connect(GiveItem)
+				child2.treeDead.connect(treeDead)
+
+func connectAskAndInt(child):
+	childOfItemsChild = child.get_children()
+	for child2 in childOfItemsChild:
+		child2.playerInteract.connect(addItem)
+		child2.askInventory.connect(askInventory)
+
+func getLevelAndMapName():
+	parent1 = find_parent("TestLevel")
+	if parent1 != null:
+		parent1 = parent1.name
+		parent2 = "Map_Maison"
+
+func Save_data():
+	fileOpen = FileAccess.open(inventory_file, FileAccess.WRITE)
+	playerData = set_playerInventoryData()
+	fileOpen.store_var(playerData)
+	fileOpen.close()
+
+func Load_data():
+	fileOpen = FileAccess.open(inventory_file, FileAccess.READ)
+	if FileAccess.file_exists(inventory_file):
+		fileRead = fileOpen.get_var()
+		lesSlots[1].value = fileRead.slot1V
+		lesSlots[1].amount = fileRead.slot1A
+		lesSlots[2].value = fileRead.slot2V
+		lesSlots[2].amount = fileRead.slot2A
+		lesSlots[3].value = fileRead.slot3V
+		lesSlots[3].amount = fileRead.slot3A
+		lesSlots[4].value = fileRead.slot4V
+		lesSlots[4].amount = fileRead.slot4A
+		lesSlots[5].value = fileRead.slot5V
+		lesSlots[5].amount = fileRead.slot5A
+		lesSlots[6].value = fileRead.slot6V
+		lesSlots[6].amount = fileRead.slot6A
+		lesSlots[7].value = fileRead.slot7V
+		lesSlots[7].amount = fileRead.slot7A
+		lesSlots[8].value = fileRead.slot8V
+		lesSlots[8].amount = fileRead.slot8A
+		fileOpen.close()
+
+func set_playerInventoryData():
+	playerInventoryData = {
+		"slot1V" : lesSlots[1].value,
+		"slot1A" : lesSlots[1].amount,
+		"slot2V" : lesSlots[2].value,
+		"slot2A" : lesSlots[2].amount,
+		"slot3V" : lesSlots[3].value,
+		"slot3A" : lesSlots[3].amount,
+		"slot4V" : lesSlots[4].value,
+		"slot4A" : lesSlots[4].amount,
+		"slot5V" : lesSlots[5].value,
+		"slot5A" : lesSlots[5].amount,
+		"slot6V" : lesSlots[6].value,
+		"slot6A" : lesSlots[6].amount,
+		"slot7V" : lesSlots[7].value,
+		"slot7A" : lesSlots[7].amount,
+		"slot8V" : lesSlots[8].value,
+		"slot8A" : lesSlots[8].amount,
+	}
+	return playerInventoryData
+
+func _input(event):
+	if find_parent("PlayerUi").holding_item:
+		find_parent("PlayerUi").holding_item.global_position = get_global_mouse_position()
+	if event.is_action_pressed("inventory"):
+		if $Control.visible == false:
+			$TextureRect.visible = true
+			$Control.visible = true
+			$trash.visible = true
+			isVisible = true
+		else:
+			$TextureRect.visible = false
+			$Control.visible = false
+			$trash.visible = false
+			isVisible = false
+	elif event.is_action_pressed("ui_cancel") && isVisible == true:
+		sendIfVisible.emit()
+		closseFourUi.emit()
+		$TextureRect.visible = false
+		$Control.visible = false
+		$trash.visible = false
+		isVisible = false
+	elif event.is_action_pressed("slot1"):
+		slotSelected = 1
+		$pocket/selectedOne.visible = true
+		$pocket/selectedTwo.visible = false
+		selectTool(slotSelected)                                                                                                                                                           
+	elif event.is_action_pressed("slot2"):
+		slotSelected = 2
+		$pocket/selectedOne.visible = false
+		$pocket/selectedTwo.visible = true
+		selectTool(slotSelected)
+
+func loadInventaire():
+	i = 0
+	while i < nbSlot:
+		if lesSlots[i].value != 0:
+			if i >= 3:
+				parentNode = get_node("Control/GridContainer/slot" + str(i))
+				itemToAdd = lesItems[(lesSlots[i].value) - 1].item
+				itemToAdd = itemToAdd.instantiate()
+				parentNode.add_child(itemToAdd)
+				itemToAdd = "Control/GridContainer/slot" + str(i) + "/item" + str(lesSlots[i].value)
+				itemToAdd = get_node(itemToAdd)
+				itemToAdd.set_quantity(lesSlots[i].amount)
+			else:
+				parentNode = get_node("pocket/pocket" + str(i))
+				itemToAdd = lesItems[(lesSlots[i].value) - 1].item
+				itemToAdd = itemToAdd.instantiate()
+				parentNode.add_child(itemToAdd)
+				itemToAdd = "pocket/pocket" + str(i) + "/item" + str(lesSlots[i].value)
+				itemToAdd = get_node(itemToAdd)
+				itemToAdd.set_quantity(lesSlots[i].amount)
+		i = i + 1
+
+func SetItemToAdd():
+	pass
+
+func addItem(item):
+	i = 1
+	itemToAdd = lesItems[item - 1].item
+	itemToAdd = itemToAdd.instantiate()
+	itemInside = false
+	while i < nbSlot && !itemInside:
+		if lesSlots[i].value == item:
+			itemInside = true
+		else:
+			i += 1
+	if !itemInside:
+		i = 1
+		while i < nbSlot && lesSlots[i].value != 0: 
+			i += 1
+	if i == nbSlot:
+		#respawn item
+		print("inventaire plain")
+	elif !itemInside:
+		itemInside = false
+		lesSlots[i].value = item
+		if i >= 3: 
+			parent = get_node("Control/GridContainer/slot" + str(i))
+		else:
+			parent = get_node("pocket/pocket" + str(i))
+		parent.add_child(itemToAdd)
+		lesSlots[i].amount += 1
+		itemToAdd.set_quantity(lesSlots[i].amount)
+		lesSlots[i].itemNode = itemToAdd
+	elif itemInside:
+		if i >= 3:
+			childNodeToDelete = get_node("Control/GridContainer/slot" + str(i) + "/item" + str(item))
+			parentNode = get_node("Control/GridContainer/slot" + str(i))
+		else:
+			childNodeToDelete = get_node("pocket/pocket" + str(i) + "/item" + str(item))
+			parentNode = get_node("pocket/pocket" + str(i))
+		parentNode.remove_child(childNodeToDelete)
+		parentNode.add_child(itemToAdd)
+		itemInside = false
+		lesSlots[i].amount += 1
+		itemToAdd.set_quantity(lesSlots[i].amount)
+
+func gererInventaire(slot, left):
+	demanderInfoChest.emit()
+	if slotTempo[0].value == 0:
+		demanderInfoFour.emit()
+	if slot >= 3 || slot == 0:
+		itemNode = "Control/GridContainer/slot"
+	else:
+		itemNode = "pocket/pocket"
+	if left:
+		if slotTempo[0].value == 0 && lesSlots[slot].value != 0: # si cest le premier clique
+			takeItem(slot)
+		elif lesSlots[slot].value == 0: # si cest le deuxieme et quil est vide
+			putItem(slot)
+		elif slotTempo[0].value != lesSlots[slot].value: # si cest le deuxieme et que cest pas le meme objet
+			echangerItem(slot)
+		elif slotTempo[0].value == lesSlots[slot].value: # si cest le deuxieme et que cest le meme objet
+			addToSame(slot)
+	elif  !left:
+		if slotTempo[0].value == 0 && lesSlots[slot].value != 0: # si cest le premier clique
+			takeAlf(slot)
+		elif slotTempo[0].value != 0 && (lesSlots[slot].value == 0 || slotTempo[0].value == lesSlots[slot].value): # si cest le deuxieme et quil est vide
+			putOne(slot)
+
+func takeItem(slot):
+	#echanger les valeurs 
+	slotTempo[0].value = lesSlots[slot].value
+	slotTempo[0].amount  = lesSlots[slot].amount
+	slotTempo[0].provenance = "i"
+	lesSlots[slot].value = 0
+	lesSlots[slot].amount = 0
+	# effacer litem
+	parentNode = get_node(itemNode + str(slot))
+	childNodeToDelete = parentNode.get_node("item" + str(slotTempo[0].value))
+	parentNode.remove_child(childNodeToDelete)
+	# ajouter litem sur la souris
+	find_parent("PlayerUi").holding_item = childNodeToDelete
+	find_parent("PlayerUi").add_child(childNodeToDelete)
+	find_parent("PlayerUi").holding_item.global_position = get_global_mouse_position()
+	childInPlayerUi = childNodeToDelete
+
+func putItem(slot):
+	# retirer lenfant de la souris
+	find_parent("PlayerUi").holding_item = null
+	find_parent("PlayerUi").remove_child(childInPlayerUi)
+	# a jouter lenfant au slot
+	parentNode = get_node(itemNode + str(slot))
+	itemToAdd = lesItems[(slotTempo[0].value) - 1].item
+	itemToAdd = itemToAdd.instantiate()
+	parentNode.add_child(itemToAdd)
+	# ajouter les bonnes valeurs 
+	lesSlots[slot].value = slotTempo[0].value
+	lesSlots[slot].amount = slotTempo[0].amount
+	itemToAdd.set_quantity(lesSlots[slot].amount)
+	slotTempo[0].value = 0
+	slotTempo[0].amount = 0
+	slotTempo[0].provenance = 0
+	childInPlayerUi = 0
+	itemAdded.emit()
+
+func echangerItem(slot):
+	# effacer litem du slot et de la souris 
+	parentNode = get_node(itemNode + str(slot))
+	childNodeToDelete = parentNode.get_node("item" + str(lesSlots[slot].value))
+	parentNode.remove_child(childNodeToDelete)
+	find_parent("PlayerUi").holding_item = null
+	find_parent("PlayerUi").remove_child(childInPlayerUi)
+	#echanger les valeurs 
+	slotTempo2[0].value = slotTempo[0].value
+	slotTempo2[0].amount  = slotTempo[0].amount
+	slotTempo2[0].provenance = slotTempo[0].provenance
+	slotTempo[0].value = lesSlots[slot].value
+	slotTempo[0].amount  = lesSlots[slot].amount
+	slotTempo[0].provenance = "i"
+	lesSlots[slot].value = slotTempo2[0].value
+	lesSlots[slot].amount = slotTempo2[0].amount
+	# ajouter litem sur la souris
+	find_parent("PlayerUi").holding_item = childNodeToDelete
+	find_parent("PlayerUi").add_child(childNodeToDelete)
+	find_parent("PlayerUi").holding_item.global_position = get_global_mouse_position()
+	childInPlayerUi = childNodeToDelete
+	# ajouter le nouvel item au slot
+	parentNode = get_node(itemNode + str(slot))
+	itemToAdd = lesItems[(lesSlots[slot].value) - 1].item
+	itemToAdd = itemToAdd.instantiate()
+	parentNode.add_child(itemToAdd)
+	itemToAdd.set_quantity(lesSlots[slot].amount)
+	itemAdded.emit()
+
+func addToSame(slot):
+	# retirer litem de la souris
+	find_parent("PlayerUi").holding_item = null
+	find_parent("PlayerUi").remove_child(childInPlayerUi)
+	# retirer litem du slot
+	parentNode = get_node(itemNode + str(slot))
+	childNodeToDelete = parentNode.get_node("item" + str(slotTempo[0].value))
+	parentNode.remove_child(childNodeToDelete)
+	# aditioner les valeurs 
+	lesSlots[slot].amount = lesSlots[slot].amount + slotTempo[0].amount
+	# ajouter lenfant
+	parentNode = get_node(itemNode + str(slot))
+	itemToAdd = lesItems[(lesSlots[slot].value) - 1].item
+	itemToAdd = itemToAdd.instantiate()
+	parentNode.add_child(itemToAdd)
+	itemToAdd.set_quantity(lesSlots[slot].amount)
+	slotTempo[0].value = 0
+	slotTempo[0].amount = 0
+	slotTempo[0].provenance = 0
+	childInPlayerUi = 0
+	itemAdded.emit()
+
+func takeAlf(slot):
+	# retirer litem
+	parentNode = get_node(itemNode + str(slot))
+	childNodeToDelete = parentNode.get_node("item" + str(lesSlots[slot].value))
+	parentNode.remove_child(childNodeToDelete)
+	# changer les valeurs
+	if lesSlots[slot].amount != 1:
+		nbItem = lesSlots[slot].amount % 2
+		if nbItem == 0: # si le nombre est paire
+			slotTempo[0].amount = lesSlots[slot].amount / 2
+			lesSlots[slot].amount = slotTempo[0].amount
+		else: # si le nombre est impaire
+			slotTempo[0].amount = (lesSlots[slot].amount / 2) + 1
+			lesSlots[slot].amount = slotTempo[0].amount - 1
+	slotTempo[0].value = lesSlots[slot].value
+	slotTempo[0].provenance = "i"
+
+	# ajouter litem sur la souris
+	parentNode = get_node(itemNode + str(slot))
+	itemToAdd = lesItems[(lesSlots[slot].value) - 1].item
+	itemToAdd = itemToAdd.instantiate()
+	parentNode.add_child(itemToAdd)
+	itemToAdd.set_quantity(slotTempo[0].amount)
+	itemToAdd = parentNode.get_node("item" + str(lesSlots[slot].value))
+	parentNode.remove_child(itemToAdd)
+	find_parent("PlayerUi").holding_item = itemToAdd
+	find_parent("PlayerUi").add_child(itemToAdd)
+	find_parent("PlayerUi").holding_item.global_position = get_global_mouse_position()
+	childInPlayerUi = itemToAdd
+
+	# ajouter litem dans le slot
+	if slotTempo[0].amount != 0:
+		parentNode = get_node(itemNode + str(slot))
+		itemToAdd = lesItems[(lesSlots[slot].value) - 1].item
+		itemToAdd = itemToAdd.instantiate()
+		parentNode.add_child(itemToAdd)
+		itemToAdd.set_quantity(lesSlots[slot].amount)
+	else:
+		lesSlots[slot].value = 0
+		lesSlots[slot].amount = 0
+
+func putOne(slot):
+	#cahnger les valeurs 
+	lesSlots[slot].amount = lesSlots[slot].amount + 1
+	lesSlots[slot].value = slotTempo[0].value
+	slotTempo[0].amount = slotTempo[0].amount - 1
+	# retirer litem du slot
+	parentNode = get_node(itemNode + str(slot))
+	childNodeToDelete = parentNode.get_node("item" + str(lesSlots[slot].value))
+	parentNode.remove_child(childNodeToDelete)
+	# retirer litem de la souris
+	find_parent("PlayerUi").holding_item = null
+	find_parent("PlayerUi").remove_child(childInPlayerUi)
+	if slotTempo[0].amount != 0:
+		# reajouter lenfant de la souris
+		itemToAdd = lesItems[(lesSlots[slot].value) - 1].item
+		itemToAdd = itemToAdd.instantiate()
+		parentNode.add_child(itemToAdd)
+		itemToAdd.set_quantity(slotTempo[0].amount)
+		parentNode.add_child(itemToAdd)
+		parentNode.remove_child(itemToAdd)
+		find_parent("PlayerUi").holding_item = itemToAdd
+		find_parent("PlayerUi").add_child(itemToAdd)
+		find_parent("PlayerUi").holding_item.global_position = get_global_mouse_position()
+		childInPlayerUi = itemToAdd
+	# re ajouter lenfant dans le slot
+	itemToAdd = lesItems[(lesSlots[slot].value) - 1].item
+	itemToAdd = itemToAdd.instantiate()
+	parentNode.add_child(itemToAdd)
+	itemToAdd.set_quantity(lesSlots[slot].amount)
+	parentNode.add_child(itemToAdd)
+	if slotTempo[0].amount == 0:
+		slotTempo[0].value = 0
+		slotTempo[0].provenance = 0
+		childInPlayerUi = 0
+	itemAdded.emit()
+
+func selectTool(slotSelected):
+	itemSelected = lesItems[(lesSlots[slotSelected].value) - 1].item
+
+func _on_slot_1_slot_click(value, left):
+	gererInventaire(value, left)
+
+func _on_slot_2_slot_click(value, left):
+	gererInventaire(value, left)
+
+func _on_slot_3_slot_click(value, left):
+	gererInventaire(value, left)
+
+func _on_slot_4_slot_click(value, left):
+	gererInventaire(value, left)
+
+func _on_slot_5_slot_click(value, left):
+	gererInventaire(value, left)
+
+func _on_baril_player_interact():
+	$TextureRect.visible = true
+	$Control.visible = true
+	isVisible = true
+
+func _on_baril_player_is_out():
+	$TextureRect.visible = false
+	$Control.visible = false
+	isVisible = false
+
+func _on_baril_stocage_item_added():
+	added()
+
+func _on_baril_stocage_send_info(value, amount, p, sourisChild):
+	if value != 0:
+		slotTempo[0].value = value
+		slotTempo[0].amount = amount
+		slotTempo[0].provenance = p 
+		childInPlayerUi = sourisChild
+
+func askInventory(item):
+	i = 0
+	itemInside = false
+	while i < nbSlot && !itemInside:
+		if lesSlots[i].value == item:
+			itemInside = true
+		else:
+			i += 1
+	if !itemInside:
+		i = 1
+		while i < nbSlot && lesSlots[i].value != 0: 
+			i += 1
+	if itemInside == true || (i < nbSlot && itemInside == false):
+		respondInventory.emit(false) #peut etre ajouter
+	else:
+		respondInventory.emit(true)
+
+func _on_pocket_1_slot_click(value, left):
+	gererInventaire(value, left)
+
+func _on_pocket_2_slot_click(value, left):
+	gererInventaire(value, left)
+
+#Function to connect items who not existe in the curent scene when the level is loaded
+
+func _item3():
+	itemToAdd = item3.instantiate()
+	addItem(3)
+
+func _item4():
+	itemToAdd = item4.instantiate()
+	addItem(4)
+
+func _item2():
+	itemToAdd = item2.instantiate()
+	addItem(2)
+
+func _item7():
+	itemToAdd = item7.instantiate()
+	addItem(7)
+
+func treeDead(name):
+	smalChilddNode = get_node("/root/" + str(parent1) + "/" + str(parent2) + "/TileMap/items/Tree/" + name + "/treeLogChildSpawn")
+	nodes = smalChilddNode.get_children()
+	for child in nodes:
+		child.askInventaire.connect(askInventory, 3)
+		child.addToInv.connect(_item3)
+	smalChilddNode = get_node("/root/" + str(parent1) + "/" + str(parent2) + "/TileMap/items/Tree/" + name + "/treeStickChildSpawn")
+	nodes = smalChilddNode.get_children()
+	for child in nodes:
+		child.askInventaire.connect(askInventory, 4)
+		child.addToInv.connect(_item4)
+
+func rockDead(name):
+	smalChilddNode = get_node("/root/" + str(parent1) + "/" + str(parent2) + "/TileMap/items/BigRock" + name + "/rockChildSpawn")
+	nodes = smalChilddNode.get_children()
+	for child in nodes:
+		child.askInventaireFromRock.connect(askInventory, 2)
+		child.addToInv.connect(_item2)
+
+func GiveItem():
+	giveItem.emit(lesSlots[slotSelected].value)
+
+func rockFerDead(name):
+	smalChilddNode = get_node("/root/" + str(parent1) + "/" + str(parent2) + "/TileMap/items/BigRockFer/" + name + "/rockFerChildSpawn")
+	nodes = smalChilddNode.get_children()
+	for child in nodes:
+		child.askInventaireFromRockFer.connect(askInventory, 7)
+		child.addToInv.connect(_item7)
+
+func _on_four_player_interact_four():
+	$TextureRect.visible = true
+	$Control.visible = true
+	isVisible = true
+
+func _on_four_player_is_out():
+	$TextureRect.visible = false
+	$Control.visible = false
+	isVisible = false
+
+func _on_four_ui_item_added():
+	added()
+
+func added():
+	slotTempo[0].value = 0
+	slotTempo[0].amount = 0  
+	slotTempo[0].item = 0
+	childInPlayerUi = 0
+
+func _on_four_ui_not_added():
+	itemInComming = false
+
+func _on_baril_stocage_demander_info_inventaire():
+	sendInfoChest.emit(slotTempo[0].value ,slotTempo[0].amount ,slotTempo[0].provenance ,childInPlayerUi)
+
+func _on_four_ui_demander_inv():
+	sendInfoFour.emit(slotTempo[0].value ,slotTempo[0].amount ,slotTempo[0].provenance ,childInPlayerUi)
+
+func _on_four_ui_send_info_inv(value, amount, p, sourisChild):
+	if value != 0 && !itemInComming:
+		slotTempo[0].value = value
+		slotTempo[0].amount = amount
+		slotTempo[0].provenance = p
+		childInPlayerUi = sourisChild
+
+func _on_trash_slot_click(value, left):
+	deletItem(value, left)
+
+func deletItem(value, left):
+	if slotTempo[0].value != 0:
+		# retirer lenfant de la souris
+		find_parent("PlayerUi").holding_item = null
+		find_parent("PlayerUi").remove_child(childInPlayerUi)
+		# ajouter les bonnes valeurs 
+		slotTempo[0].value = 0
+		slotTempo[0].amount = 0
+		slotTempo[0].provenance = 0
+		childInPlayerUi = 0
+		itemAdded.emit()
