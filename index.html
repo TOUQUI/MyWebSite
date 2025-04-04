@@ -118,7 +118,10 @@
             <ul class="icons">
                 <li><a href="https://www.facebook.com/julienbeaumont.qc/about" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
                 <li><a href="https://github.com/TOUQUI" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-                <li><a class="icon brands fa-discord" onclick="copyDiscordUsername()"><span class="label">Discord</span></a></li>
+                <li>
+                    <a class="icon brands fa-discord"><span class="label">Discord</span></a>
+                    <div id="popup" class="popup">Nom d'utilisateur Discord copié</div>
+                </li>
             </ul>
         </nav>
 
@@ -242,9 +245,6 @@
         </div>
 
     </div>
-
-    <div id="popup" class="popup">Nom d'utilisateur Discord copié</div>
-
 
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrollex.min.js"></script>
