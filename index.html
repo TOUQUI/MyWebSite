@@ -25,20 +25,74 @@
             border-radius: 10px;
         }
 
-            .styled-paragraph strong {
-                color: white;
-            }
+        .styled-paragraph strong {
+            color: white;
+        }
 
-            .styled-paragraph a {
-                color: white;
-                text-decoration: underline;
-            }
+        .styled-paragraph a {
+            color: white;
+            text-decoration: underline;
+        }
 
         .responsive-image {
             width: 100%;
             height: auto;
             max-width: 700px;
             margin: 2em;
+        }
+
+        .popup.show {
+            visibility: visible;
+            -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+            animation: fadein 0.5s, fadeout 0.5s 2.5s;
+        }
+
+        @-webkit-keyframes fadein {
+            from {
+                bottom: 0;
+                opacity: 0;
+            }
+
+            to {
+                bottom: 30px;
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadein {
+            from {
+                bottom: 0;
+                opacity: 0;
+            }
+
+            to {
+                bottom: 30px;
+                opacity: 1;
+            }
+        }
+
+        @-webkit-keyframes fadeout {
+            from {
+                bottom: 30px;
+                opacity: 1;
+            }
+
+            to {
+                bottom: 0;
+                opacity: 0;
+            }
+        }
+
+        @keyframes fadeout {
+            from {
+                bottom: 30px;
+                opacity: 1;
+            }
+
+            to {
+                bottom: 0;
+                opacity: 0;
+            }
         }
     </style>
 </head>
@@ -64,8 +118,7 @@
             <ul class="icons">
                 <li><a href="https://www.facebook.com/julienbeaumont.qc/about" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
                 <li><a href="https://github.com/TOUQUI" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-                <li><a href="#" class="icon brands fa-discord"><span class="label">Discord</span></a></li>
-
+                <li><a href="#" class="icon brands fa-discord" onclick="copyDiscordUsername()"><span class="label">Discord</span></a></li>
             </ul>
         </nav>
 
@@ -190,6 +243,9 @@
 
     </div>
 
+    <div id="popup" class="popup">Nom d'utilisateur Discord copié</div>
+
+
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrollex.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
@@ -197,6 +253,20 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+        function copyDiscordUsername() {
+            const discordUsername = "touqui";
+            navigator.clipboard.writeText(discordUsername).then(function () {
+                const popup = document.getElementById("popup");
+                popup.classList.add("show");
+                setTimeout(function () {
+                    popup.classList.remove("show");
+                }, 3000);
+            }, function (err) {
+                console.error('Could not copy text: ', err);
+            });
+        }
+    </script>
 
 </body>
 </html>
