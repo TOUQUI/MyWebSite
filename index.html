@@ -24,20 +24,83 @@
             border-radius: 10px;
         }
 
-        .styled-paragraph strong {
-            color: white;
-        }
+            .styled-paragraph strong {
+                color: white;
+            }
 
-        .styled-paragraph a {
-            color: white;
-            text-decoration: underline;
-        }
+            .styled-paragraph a {
+                color: white;
+                text-decoration: underline;
+            }
 
         .responsive-image {
             width: 100%;
             height: auto;
             max-width: 700px;
             margin: 2em;
+        }
+
+        @media (max-width: 768px) {
+            .styled-paragraph {
+                padding: 10px;
+                margin: 5px 0;
+            }
+
+            .responsive-image {
+                max-width: 100%;
+                margin: 1em;
+            }
+
+            #nav ul.links {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #nav ul.icons {
+                justify-content: center;
+            }
+
+            #footer .split.contact {
+                flex-direction: column;
+                align-items: center;
+            }
+
+                #footer .split.contact > div {
+                    width: 100%;
+                    max-width: none;
+                    margin-bottom: 20px;
+                }
+        }
+
+        @media (max-width: 480px) {
+            .styled-paragraph {
+                font-size: 14px;
+            }
+
+            .responsive-image {
+                max-width: 100%;
+                margin: 0.5em;
+            }
+
+            #intro h1 {
+                font-size: 24px;
+            }
+
+            #intro p {
+                font-size: 16px;
+            }
+
+            #nav ul.links li a {
+                font-size: 16px;
+            }
+
+            #footer .split.contact h3 {
+                font-size: 16px;
+            }
+
+            #footer .split.contact a {
+                font-size: 14px;
+            }
         }
     </style>
 </head>
