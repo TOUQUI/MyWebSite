@@ -2,7 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\.github",
-    "\\assets"
+    "\\assets",
+    "\\assets\\css",
+    "\\assets\\sass",
+    "\\images",
+    "\\scripts"
   ],
+  "SelectedNode": "\\images\\michaelErrorCode.gif",
   "PreviewInSolutionExplorer": false
 }
