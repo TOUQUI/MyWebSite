@@ -7,12 +7,76 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:projetsscolaires.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\README.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:README.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\projetspersonels.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:projetspersonels.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\css\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\css\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\css\\noscript.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\css\\noscript.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\js\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\js\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\sass\\base\\_page.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\sass\\base\\_page.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\js\\util.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\js\\util.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\sass\\noscript.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\sass\\noscript.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\sass\\main.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\sass\\main.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\sass\\components\\_row.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\sass\\components\\_row.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\sass\\components\\_pagination.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\sass\\components\\_pagination.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\sass\\components\\_list.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\sass\\components\\_list.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\sass\\components\\_icons.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\sass\\components\\_icons.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\sass\\components\\_icon.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\sass\\components\\_icon.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\sass\\components\\_button.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\sass\\components\\_button.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\sass\\base\\_typography.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\sass\\base\\_typography.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\sass\\base\\_reset.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\sass\\base\\_reset.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\images\\bg2.png||{58961B49-13E0-48C0-9258-13CBC4D40279}",
@@ -30,11 +94,204 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 17,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "noscript.css",
+              "DocumentMoniker": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\css\\noscript.css",
+              "RelativeDocumentMoniker": "assets\\css\\noscript.css",
+              "ToolTip": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\css\\noscript.css",
+              "RelativeToolTip": "assets\\css\\noscript.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-05T13:56:34.599Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "util.js",
+              "DocumentMoniker": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\js\\util.js",
+              "RelativeDocumentMoniker": "assets\\js\\util.js",
+              "ToolTip": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\js\\util.js",
+              "RelativeToolTip": "assets\\js\\util.js",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAnwFUAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-05T13:55:23.691Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "noscript.scss",
+              "DocumentMoniker": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\sass\\noscript.scss",
+              "RelativeDocumentMoniker": "assets\\sass\\noscript.scss",
+              "ToolTip": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\sass\\noscript.scss",
+              "RelativeToolTip": "assets\\sass\\noscript.scss",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002663|",
+              "WhenOpened": "2025-04-05T13:53:08.774Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "main.scss",
+              "DocumentMoniker": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\sass\\main.scss",
+              "RelativeDocumentMoniker": "assets\\sass\\main.scss",
+              "ToolTip": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\sass\\main.scss",
+              "RelativeToolTip": "assets\\sass\\main.scss",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002663|",
+              "WhenOpened": "2025-04-05T13:53:05.706Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_row.scss",
+              "DocumentMoniker": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\sass\\components\\_row.scss",
+              "RelativeDocumentMoniker": "assets\\sass\\components\\_row.scss",
+              "ToolTip": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\sass\\components\\_row.scss",
+              "RelativeToolTip": "assets\\sass\\components\\_row.scss",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002663|",
+              "WhenOpened": "2025-04-05T13:53:02.05Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_pagination.scss",
+              "DocumentMoniker": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\sass\\components\\_pagination.scss",
+              "RelativeDocumentMoniker": "assets\\sass\\components\\_pagination.scss",
+              "ToolTip": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\sass\\components\\_pagination.scss",
+              "RelativeToolTip": "assets\\sass\\components\\_pagination.scss",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002663|",
+              "WhenOpened": "2025-04-05T13:53:00.052Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "_list.scss",
+              "DocumentMoniker": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\sass\\components\\_list.scss",
+              "RelativeDocumentMoniker": "assets\\sass\\components\\_list.scss",
+              "ToolTip": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\sass\\components\\_list.scss",
+              "RelativeToolTip": "assets\\sass\\components\\_list.scss",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002663|",
+              "WhenOpened": "2025-04-05T13:52:58.466Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_icons.scss",
+              "DocumentMoniker": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\sass\\components\\_icons.scss",
+              "RelativeDocumentMoniker": "assets\\sass\\components\\_icons.scss",
+              "ToolTip": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\sass\\components\\_icons.scss",
+              "RelativeToolTip": "assets\\sass\\components\\_icons.scss",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002663|",
+              "WhenOpened": "2025-04-05T13:52:57.204Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "_icon.scss",
+              "DocumentMoniker": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\sass\\components\\_icon.scss",
+              "RelativeDocumentMoniker": "assets\\sass\\components\\_icon.scss",
+              "ToolTip": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\sass\\components\\_icon.scss",
+              "RelativeToolTip": "assets\\sass\\components\\_icon.scss",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002663|",
+              "WhenOpened": "2025-04-05T13:52:55.907Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "_button.scss",
+              "DocumentMoniker": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\sass\\components\\_button.scss",
+              "RelativeDocumentMoniker": "assets\\sass\\components\\_button.scss",
+              "ToolTip": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\sass\\components\\_button.scss",
+              "RelativeToolTip": "assets\\sass\\components\\_button.scss",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002663|",
+              "WhenOpened": "2025-04-05T13:52:54.61Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "_typography.scss",
+              "DocumentMoniker": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\sass\\base\\_typography.scss",
+              "RelativeDocumentMoniker": "assets\\sass\\base\\_typography.scss",
+              "ToolTip": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\sass\\base\\_typography.scss",
+              "RelativeToolTip": "assets\\sass\\base\\_typography.scss",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002663|",
+              "WhenOpened": "2025-04-05T13:52:49.752Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_page.scss",
+              "DocumentMoniker": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\sass\\base\\_page.scss",
+              "RelativeDocumentMoniker": "assets\\sass\\base\\_page.scss",
+              "ToolTip": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\sass\\base\\_page.scss",
+              "RelativeToolTip": "assets\\sass\\base\\_page.scss",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002663|",
+              "WhenOpened": "2025-04-05T13:52:46.89Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "main.js",
+              "DocumentMoniker": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\js\\main.js",
+              "RelativeDocumentMoniker": "assets\\js\\main.js",
+              "ToolTip": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\js\\main.js",
+              "RelativeToolTip": "assets\\js\\main.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-05T13:52:44.041Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "README.txt",
+              "DocumentMoniker": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\README.txt",
+              "RelativeDocumentMoniker": "README.txt",
+              "ToolTip": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\README.txt",
+              "RelativeToolTip": "README.txt",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-04-05T13:52:32.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "_reset.scss",
+              "DocumentMoniker": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\sass\\base\\_reset.scss",
+              "RelativeDocumentMoniker": "assets\\sass\\base\\_reset.scss",
+              "ToolTip": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\sass\\base\\_reset.scss",
+              "RelativeToolTip": "assets\\sass\\base\\_reset.scss",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002663|",
+              "WhenOpened": "2025-04-05T13:52:20.581Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "main.css",
+              "DocumentMoniker": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\css\\main.css",
+              "RelativeDocumentMoniker": "assets\\css\\main.css",
+              "ToolTip": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\css\\main.css",
+              "RelativeToolTip": "assets\\css\\main.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-05T13:52:16.642Z"
             },
             {
               "$type": "Document",
@@ -44,7 +301,7 @@
               "RelativeDocumentMoniker": "projetsscolaires.html",
               "ToolTip": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\projetsscolaires.html",
               "RelativeToolTip": "projetsscolaires.html",
-              "ViewState": "AgIAAHwAAAAAAAAAAAAcwHwAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAAAJgAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-04-05T12:05:25.358Z",
               "EditorCaption": ""
@@ -57,14 +314,14 @@
               "RelativeDocumentMoniker": "projetspersonels.html",
               "ToolTip": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\projetspersonels.html",
               "RelativeToolTip": "projetspersonels.html",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAAC4AAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAADgAAAAAAAAAAAAAAGQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-04-01T20:34:09.151Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 19,
               "Title": "bg2.png",
               "DocumentMoniker": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\images\\bg2.png",
               "RelativeDocumentMoniker": "images\\bg2.png",
@@ -75,20 +332,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "index.html",
               "DocumentMoniker": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\index.html",
               "RelativeDocumentMoniker": "index.html",
               "ToolTip": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\index.html",
               "RelativeToolTip": "index.html",
-              "ViewState": "AgIAAO0AAAAAAAAAAAAcwAsBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAKgAAAAAAAAAAAAkwLkAAADJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-04-01T17:29:01.899Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 20,
               "Title": "_html-grid.scss",
               "DocumentMoniker": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\sass\\libs\\_html-grid.scss",
               "RelativeDocumentMoniker": "assets\\sass\\libs\\_html-grid.scss",
