@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\motivation.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:motivation.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\projetspersonels.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:projetspersonels.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\README.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -98,7 +98,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 21,
           "Children": [
             {
               "$type": "Bookmark",
@@ -106,15 +106,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "motivation.html",
               "DocumentMoniker": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\motivation.html",
               "RelativeDocumentMoniker": "motivation.html",
               "ToolTip": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\motivation.html",
               "RelativeToolTip": "motivation.html",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAAC8AAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-04-28T13:51:17.904Z",
+              "WhenOpened": "2025-04-28T14:01:49.189Z",
               "EditorCaption": ""
             },
             {
@@ -311,26 +311,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "projetsscolaires.html",
               "DocumentMoniker": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\projetsscolaires.html",
               "RelativeDocumentMoniker": "projetsscolaires.html",
               "ToolTip": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\projetsscolaires.html",
               "RelativeToolTip": "projetsscolaires.html",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAAAHwAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAIoAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-04-05T12:05:25.358Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "projetspersonels.html",
               "DocumentMoniker": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\projetspersonels.html",
               "RelativeDocumentMoniker": "projetspersonels.html",
               "ToolTip": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\projetspersonels.html",
               "RelativeToolTip": "projetspersonels.html",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAAC8AAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAACMAAAAAAAAAAAArwCwAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-04-01T20:34:09.151Z",
               "EditorCaption": ""
@@ -348,13 +348,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "index.html",
               "DocumentMoniker": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\index.html",
               "RelativeDocumentMoniker": "index.html",
               "ToolTip": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\index.html",
               "RelativeToolTip": "index.html",
-              "ViewState": "AgIAAGwAAAAAAAAAAAAAAH0AAABLAAAAAAAAAA==",
+              "ViewState": "AgIAAHEAAAAAAAAAAAArwH0AAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-04-01T17:29:01.899Z",
               "EditorCaption": ""
