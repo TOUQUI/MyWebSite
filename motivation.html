@@ -25,6 +25,20 @@
 			align-items: center;
 			flex-wrap: wrap;
 		}
+
+        .responsive-image {
+            width: 100%;
+            height: auto;
+            max-width: 700px;
+            margin: 2em;
+        }
+
+        @media (max-width: 768px) {
+            .responsive-image {
+                max-width: 100%;
+                margin: 1em;
+            }
+        }
 	</style>
 </head>
 <body class="is-preload">
@@ -58,9 +72,11 @@
 
 		<div id="main">
 			<div>
-                <p>
-                    J'aime manger des patates frites. C'est vraiment bon et j'en mange souvent. Je suis un grand fan de patates frites et je pense que c'est l'un des meilleurs aliments au monde. J'aime les manger avec de la mayonnaise ou du ketchup, mais je suis aussi ouvert à d'autres sauces. Je suis convaincu que les patates frites sont un plat universel qui peut plaire à tout le monde. Je suis prêt à défendre cette opinion avec passion et détermination. 
-                </p>
+				<h2>Pourquoi vouloir travailler en informatique ?</h2>
+				<p>
+					J'aime manger des patates frites. C'est vraiment bon et j'en mange souvent. Je suis un grand fan de patates frites et je pense que c'est l'un des meilleurs aliments au monde. J'aime les manger avec de la mayonnaise ou du ketchup, mais je suis aussi ouvert à d'autres sauces. Je suis convaincu que les patates frites sont un plat universel qui peut plaire à tout le monde. Je suis prêt à défendre cette opinion avec passion et détermination.
+				</p>
+				<img class="responsive-image" src="images/michaelErrorCode.gif" alt="images/michaelErrorCode.gif" />
 			</div>
 		</div>
 
