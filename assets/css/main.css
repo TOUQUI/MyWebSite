@@ -3448,7 +3448,7 @@ input, select, textarea {
 
 			#intro {
 				padding: 4rem 4rem 2rem 4rem ;
-				min-height: 50vh;
+				min-height: 25vh;
 			}
 
 				#intro p br {
@@ -3465,7 +3465,7 @@ input, select, textarea {
 
 			#intro {
 				padding: 3rem 2rem 1rem 2rem ;
-				min-height: 40vh;
+				min-height: 20vh;
 			}
 
 				#intro h1 {
