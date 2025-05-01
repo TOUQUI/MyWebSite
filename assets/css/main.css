@@ -3222,7 +3222,7 @@ input, select, textarea {
 		overflow: hidden;
 	}
 
-		#wrapper > .bg {
+/*		#wrapper > .bg {
 			position: absolute;
 			top: 0;
 			left: 0;
@@ -3235,6 +3235,25 @@ input, select, textarea {
 			background-repeat: repeat,								no-repeat,													no-repeat;
 			background-attachment: scroll,								scroll,														scroll;
 			z-index: -1;
+		}*/
+
+		#wrapper > .bg {
+			position: fixed; /* Fond fixé pour éviter qu'il ne se déplace pendant le scroll */
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: #212931;
+			background-image: url("../../images/overlay.png"),
+			/* Utilisation de la variable pour l'opacité dans le linear-gradient */
+			linear-gradient(0deg, rgba(0, 0, 0, var(--opacity)), rgba(0, 0, 0, var(--opacity))), url("../../images/XPBG.jpg");
+			background-size: auto, auto, 100% auto;
+			background-position: center, center, top center;
+			background-repeat: repeat, no-repeat, no-repeat;
+			background-attachment: fixed, fixed, fixed;
+			z-index: -1;
+			/* optionnel : transition pour un effet plus fluide */
+			transition: background-image 0.2s ease-out;
 		}
 
 			#wrapper > .bg.fixed {
