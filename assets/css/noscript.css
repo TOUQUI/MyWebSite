@@ -3,14 +3,29 @@
 
 /* Wrapper */
 
-	#wrapper {
+/*	#wrapper {
 		background-color: #212931;
 		background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/XPBG.jpg");
 		background-size: auto,								auto,														100% auto;
 		background-position: center,								center,														top center;
 		background-repeat: repeat,								no-repeat,													no-repeat;
 		background-attachment: fixed,								fixed,														fixed;
-	}
+	}*/
+
+#wrapper {
+	background-color: #212931;
+	background-image: url("../../images/overlay.png"),
+	/* Utilisation de la variable pour l’opacité */
+	linear-gradient(0deg, rgba(0, 0, 0, var(--opacity)), rgba(0, 0, 0, var(--opacity))), url("../../images/XPBG.jpg");
+	background-size: auto, auto, 100% auto;
+	background-position: center, center, top center;
+	background-repeat: repeat, no-repeat, no-repeat;
+	background-attachment: fixed, fixed, fixed;
+	/* Pour assurer un scroll suffisant à tester l’effet */
+	min-height: 200vh;
+	/* Transition optionnelle pour un effet plus fluide */
+	transition: background-image 0.2s ease-out;
+}
 
 		#wrapper.fade-in:before {
 			display: none;
