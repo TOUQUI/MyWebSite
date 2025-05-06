@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\css\\noscript.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\css\\noscript.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\css\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\css\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\motivation.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:motivation.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\projetspersonels.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:projetspersonels.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\projetsscolaires.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:projetsscolaires.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\sass\\noscript.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}",
@@ -19,20 +27,16 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\sass\\layout\\_wrapper.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\sass\\components\\_form.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\sass\\components\\_form.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\motivation.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:motivation.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\css\\noscript.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\css\\noscript.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\projetsscolaires.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:projetsscolaires.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\projetspersonels.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:projetspersonels.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\css\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\css\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\README.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -98,65 +102,80 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 22,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_form.scss",
+              "DocumentMoniker": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\sass\\components\\_form.scss",
+              "RelativeDocumentMoniker": "assets\\sass\\components\\_form.scss",
+              "ToolTip": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\sass\\components\\_form.scss",
+              "RelativeToolTip": "assets\\sass\\components\\_form.scss",
+              "ViewState": "AgIAANwAAAAAAAAAAAAIwOgAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002663|",
+              "WhenOpened": "2025-05-01T21:19:43.045Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "_wrapper.scss",
               "DocumentMoniker": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\sass\\layout\\_wrapper.scss",
               "RelativeDocumentMoniker": "assets\\sass\\layout\\_wrapper.scss",
               "ToolTip": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\sass\\layout\\_wrapper.scss",
               "RelativeToolTip": "assets\\sass\\layout\\_wrapper.scss",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAMwBUAAACGAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAIwBUAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002663|",
-              "WhenOpened": "2025-05-01T20:55:21.904Z"
+              "WhenOpened": "2025-05-01T20:55:21.904Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "main.css",
               "DocumentMoniker": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\css\\main.css",
               "RelativeDocumentMoniker": "assets\\css\\main.css",
               "ToolTip": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\css\\main.css",
               "RelativeToolTip": "assets\\css\\main.css",
-              "ViewState": "AgIAAJMMAAAAAAAAAAAIwJ8MAACLAAAAAAAAAA==",
+              "ViewState": "AgIAAJMMAAAAAAAAAAAIwJ8MAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-05-01T20:54:56.012Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "motivation.html",
               "DocumentMoniker": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\motivation.html",
               "RelativeDocumentMoniker": "motivation.html",
               "ToolTip": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\motivation.html",
               "RelativeToolTip": "motivation.html",
-              "ViewState": "AgIAAHoAAAAAAAAAAAAAADcAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-04-28T15:12:15.62Z"
+              "WhenOpened": "2025-04-28T15:12:15.62Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "noscript.css",
               "DocumentMoniker": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\css\\noscript.css",
               "RelativeDocumentMoniker": "assets\\css\\noscript.css",
               "ToolTip": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\css\\noscript.css",
               "RelativeToolTip": "assets\\css\\noscript.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-04-05T13:56:34.599Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "util.js",
               "DocumentMoniker": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\js\\util.js",
               "RelativeDocumentMoniker": "assets\\js\\util.js",
@@ -168,19 +187,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "noscript.scss",
               "DocumentMoniker": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\sass\\noscript.scss",
               "RelativeDocumentMoniker": "assets\\sass\\noscript.scss",
               "ToolTip": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\sass\\noscript.scss",
               "RelativeToolTip": "assets\\sass\\noscript.scss",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAMwBMAAACFAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAIwBMAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002663|",
-              "WhenOpened": "2025-04-05T13:53:08.774Z"
+              "WhenOpened": "2025-04-05T13:53:08.774Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "main.scss",
               "DocumentMoniker": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\sass\\main.scss",
               "RelativeDocumentMoniker": "assets\\sass\\main.scss",
@@ -192,7 +212,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "_row.scss",
               "DocumentMoniker": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\sass\\components\\_row.scss",
               "RelativeDocumentMoniker": "assets\\sass\\components\\_row.scss",
@@ -204,7 +224,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "_pagination.scss",
               "DocumentMoniker": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\sass\\components\\_pagination.scss",
               "RelativeDocumentMoniker": "assets\\sass\\components\\_pagination.scss",
@@ -216,7 +236,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "_list.scss",
               "DocumentMoniker": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\sass\\components\\_list.scss",
               "RelativeDocumentMoniker": "assets\\sass\\components\\_list.scss",
@@ -228,7 +248,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "_icons.scss",
               "DocumentMoniker": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\sass\\components\\_icons.scss",
               "RelativeDocumentMoniker": "assets\\sass\\components\\_icons.scss",
@@ -240,7 +260,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "_icon.scss",
               "DocumentMoniker": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\sass\\components\\_icon.scss",
               "RelativeDocumentMoniker": "assets\\sass\\components\\_icon.scss",
@@ -252,7 +272,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "_button.scss",
               "DocumentMoniker": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\sass\\components\\_button.scss",
               "RelativeDocumentMoniker": "assets\\sass\\components\\_button.scss",
@@ -264,7 +284,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "_typography.scss",
               "DocumentMoniker": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\sass\\base\\_typography.scss",
               "RelativeDocumentMoniker": "assets\\sass\\base\\_typography.scss",
@@ -276,7 +296,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "_page.scss",
               "DocumentMoniker": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\sass\\base\\_page.scss",
               "RelativeDocumentMoniker": "assets\\sass\\base\\_page.scss",
@@ -288,7 +308,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "main.js",
               "DocumentMoniker": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\js\\main.js",
               "RelativeDocumentMoniker": "assets\\js\\main.js",
@@ -300,7 +320,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "README.txt",
               "DocumentMoniker": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\README.txt",
               "RelativeDocumentMoniker": "README.txt",
@@ -312,7 +332,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "_reset.scss",
               "DocumentMoniker": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\sass\\base\\_reset.scss",
               "RelativeDocumentMoniker": "assets\\sass\\base\\_reset.scss",
@@ -324,43 +344,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "projetsscolaires.html",
               "DocumentMoniker": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\projetsscolaires.html",
               "RelativeDocumentMoniker": "projetsscolaires.html",
               "ToolTip": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\projetsscolaires.html",
               "RelativeToolTip": "projetsscolaires.html",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAAAGoAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-04-05T12:05:25.358Z"
+              "WhenOpened": "2025-04-05T12:05:25.358Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "projetspersonels.html",
               "DocumentMoniker": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\projetspersonels.html",
               "RelativeDocumentMoniker": "projetspersonels.html",
               "ToolTip": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\projetspersonels.html",
               "RelativeToolTip": "projetspersonels.html",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAACQAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-04-01T20:34:09.151Z"
+              "WhenOpened": "2025-04-01T20:34:09.151Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "index.html",
               "DocumentMoniker": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\index.html",
               "RelativeDocumentMoniker": "index.html",
               "ToolTip": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\index.html",
               "RelativeToolTip": "index.html",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwB4AAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-04-01T17:29:01.899Z"
+              "WhenOpened": "2025-04-01T17:29:01.899Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "_html-grid.scss",
               "DocumentMoniker": "C:\\Users\\julie\\OneDrive\\Bureau\\MonSiteWeb\\assets\\sass\\libs\\_html-grid.scss",
               "RelativeDocumentMoniker": "assets\\sass\\libs\\_html-grid.scss",
